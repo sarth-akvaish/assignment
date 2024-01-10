@@ -52,6 +52,7 @@ const Carouesl = () => {
 
     const containerRef = React.useRef();
     const sliderTimerRef = React.useRef()
+    
     useEffect(() => {
         return () => {
             clearInterval(sliderTimerRef.current);

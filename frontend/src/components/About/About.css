@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@600&family=Source+Sans+3:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
 .about {
   height: 653px;
   display: flex;
@@ -63,6 +63,88 @@
   font-weight: 600;
   font-size: 16px;
 }
+@media (max-width: 1280px) {
+  .about {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .img-container {
+    /* display: none; */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+  }
+  .container {
+    margin: 0;
+  }
+
+  .text2-container {
+    /* margin: 40px; */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text2-container h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  .text2-container p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .text2-container button {
+    width: 110px;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 400;
+    align-items: center;
+    font-family: "Source Sans 3";
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-container {
+    display: none;
+  }
+  .container {
+    margin: 0;
+  }
+
+  .text2-container {
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text2-container h1 {
+    margin: 0;
+    font-size: 33px;
+  }
+  .text2-container p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .text2-container button {
+    width: 102px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    align-items: center;
+    font-family: "Source Sans 3";
+  }
+}
 
 @media (max-width: 430px) {
   .img-container {
@@ -89,12 +171,12 @@
     font-size: 11px;
     line-height: 21px;
   }
-  .text2-container button{
+  .text2-container button {
     width: 96px;
     height: 25px;
     font-size: 11px;
     font-weight: 400;
     align-items: center;
-    font-family: 'Source Sans 3';
+    font-family: "Source Sans 3";
   }
 }

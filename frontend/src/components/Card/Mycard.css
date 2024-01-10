@@ -49,6 +49,7 @@
   cursor: pointer;
 }
 
+
 @media (max-width: 430px) {
   .mycard {
     margin: 20px;
