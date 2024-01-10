@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './carousel.css'
 import Mycard from '../Card/Card';
 import image1 from '../../assets/5.png'
@@ -48,22 +48,37 @@ const datas = [
 ];
 
 const Carouesl = () => {
-    let box = document.querySelector('.product-container');
+    // let box = document.querySelector('.product-container');
+
+    const containerRef = React.useRef();
+    const sliderTimerRef = React.useRef()
+    useEffect(() => {
+        return () => {
+            clearInterval(sliderTimerRef.current);
+        };
+    }, []);
 
     const btnpressprev = () => {
+        clearInterval(sliderTimerRef.current);
+        const box = containerRef.current;
         let width = screen.width;
-        box.scrollLeft = box.scrollLeft - width;
+        // box.scrollLeft = box.scrollLeft + width;
+        // console.log(width)
+        box.scrollLeft -= width;
     }
-
     const btnpressnext = () => {
-        let width = screen.width - 40;
-        box.scrollLeft = box.scrollLeft + width;
+        clearInterval(sliderTimerRef.current);
+        const box = containerRef.current;
+        let width = screen.width;
+        // box.scrollLeft = box.scrollLeft + width;
+        // console.log(width)
+        box.scrollLeft += width;
     }
 
     return (
         <div className="product-carousel">
             <h1 className='product-title'>Latest Articles</h1>
-            <div className="product-container">
+            <div className="product-container" ref={containerRef}>
                 {datas.map((item) => {
                     return (
                         <Mycard key={item.id} title={item.title} img={item.img} desc={item.desc} />
