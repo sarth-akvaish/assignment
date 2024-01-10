@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+3:wght@700&display=swap");
+
+footer {
+  display: grid;
+  /* width: 1440px; */
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  height: 362px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    90.07deg,
+    rgba(30, 42, 93, 0.04) 30.91%,
+    rgba(48, 62, 130, 0.04) 64.79%,
+    rgba(60, 80, 157, 0.04) 91.94%
+  );
+  font-family: "Source Sans ", sans-serif;
+}
+
+.footer-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer-contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.footer-contact-section h3 {
+  font-size: 18px;
+  color: rgba(14, 35, 104, 1);
+}
+.footer-contact-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contact-section ul li {
+  list-style: none;
+  font-weight: 400;
+  color: rgba(68, 73, 87, 1);
+  font-family: "Source Sans", sans-serif;
+  font-size: 14px;
+}
+
+.links {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+}
+.links ul {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 430px) {
+  .footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+  }
+  .footer-img-container {
+    padding: 0;
+    /* margin: 10px; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-img-container img {
+    width: 75px;
+    height: 58px;
+  }
+  .footer-contact-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .footer-contact-section h3 {
+    margin-left: 30px;
+
+    font-size: 15.6px;
+  }
+  .footer-contact-section ul {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-contact-section ul li {
+    font-size: 8.6px;
+    margin-left: 30px;
+    color: rgba(100, 104, 116, 1);
+    font-family: "Source Sans 3";
+  }
+
+  .links {
+    align-items: center;
+  }
+  .links ul {
+    display: flex;
+    align-items: center;
+  }
+  .links h3 {
+    display: none;
+  }
+}
