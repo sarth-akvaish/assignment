@@ -11,16 +11,16 @@ const Footer = () => {
                 <img src={icon} alt="" />
             </div>
             <div className='footer-contact-section'>
-                <h3>Contact us</h3>
                 <ul>
+                    <h3>Contact us</h3>
                     <li>Lorem Ipsum Pvt Ltd.5/1, Magalton <br />Road, Phartosh Gate near YTM <br />Market, XYZ-343434</li>
                     <li>example2020@gmail.com</li>
                     <li>(904) 443-0343</li>
                 </ul>
             </div>
             <div className='footer-contact-section'>
-                <h3>More</h3>
                 <ul>
+                    <h3>More</h3>
                     <li>About us</li>
                     <li>Products</li>
                     <li>Career</li>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='footer-contact-section links'>
-                <h3>Social Links</h3>
+                    <h3>Social Links</h3>
                 <ul>
                     <li><img src={ig} alt="" /></li>
                     <li><img src={tw} alt="" /></li>

@@ -29,7 +29,7 @@ const datas = [
     },
     {
         id: 4,
-        img:image4,
+        img: image4,
         title: "How To Grill Corn",
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aut accusamus dicta architecto explicabo reiciendis rerum, sed officia adipisci et.'
     },
@@ -56,7 +56,7 @@ const Carouesl = () => {
     }
 
     const btnpressnext = () => {
-        let width = screen.width;
+        let width = screen.width - 40;
         box.scrollLeft = box.scrollLeft + width;
     }
 
